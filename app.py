@@ -25,9 +25,9 @@ import streamlit as st
 import streamlit as st
 
 # Access secrets using st.secrets
-openai_key = st.secrets["OPEN_AI_KEY"]
-serp_api_key = st.secrets["SERP_API_KEY"]
-browserless_api_key = st.secrets["BROWSERLESS_API_KEY"]
+OPEN_AI_KEY = st.secrets["OPEN_AI_KEY"]
+SERP_API_KEY = st.secrets["SERP_API_KEY"]
+BROWSERLESS_API_key = st.secrets["BROWSERLESS_API_KEY"]
 
 
 
