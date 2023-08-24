@@ -23,9 +23,7 @@ import streamlit as st
 
 # API Keys
 load_dotenv()
-OPEN_AI_KEY = os.getenv("OPEN_AI_KEY")
-SERP_API_KEY = os.getenv("SERP_API_KEY")
-BROWSERLESS_API_KEY = ""
+
 
 # Create tool for searching
 
