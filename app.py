@@ -22,7 +22,14 @@ from langchain.utilities import GoogleSerperAPIWrapper
 import streamlit as st
 
 # API Keys
-load_dotenv()
+import streamlit as st
+
+# Access secrets using st.secrets
+openai_key = st.secrets["OPEN_AI_KEY"]
+serp_api_key = st.secrets["SERP_API_KEY"]
+browserless_api_key = st.secrets["BROWSERLESS_API_KEY"]
+
+
 
 
 # Create tool for searching
