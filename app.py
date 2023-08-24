@@ -1,5 +1,5 @@
 import os
-#from dotenv import load_dotenv
+from dotenv import load_dotenv
 
 from langchain import PromptTemplate
 from langchain.agents import initialize_agent, Tool
@@ -22,10 +22,10 @@ from langchain.utilities import GoogleSerperAPIWrapper
 import streamlit as st
 
 # API Keys
-# OPEN_AI_KEY = "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"
-OPEN_AI_KEY = "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" # NEW ONE
-SERP_API_KEY = "9bfd31fded57f2e66048fa93f94354f94c1479cf"
-BROWSERLESS_API_KEY = "f9e0400d-b826-43d9-969c-671e7d9fc424"
+load_dotenv()
+OPEN_AI_KEY = os.getenv("OPEN_AI_KEY")
+SERP_API_KEY = os.getenv("SERP_API_KEY")
+BROWSERLESS_API_KEY = ""
 
 # Create tool for searching
 
