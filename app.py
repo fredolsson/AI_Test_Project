@@ -59,7 +59,7 @@ def scrape_website(objective: str, url: str):
     soup = BeautifulSoup(response.content, "html.parser") # Use beutifulsoup to only extract the text from the html
     text = soup.get_text()
 
-    if len(text > 10000):
+    if len(text) > 10000:
       output = summarize(objective, text)
       return output
 
