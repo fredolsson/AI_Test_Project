@@ -27,7 +27,7 @@ import streamlit as st
 # Access secrets using st.secrets
 OPEN_AI_KEY = os.getenv("OPEN_AI_KEY")
 SERP_API_KEY = os.getenv("SERP_API_KEY")
-
+BROWSERLESS_API_KEY = os.getenv("BROWSERLESS_API_KEY")
 
 
 
